@@ -45,9 +45,11 @@ INSTALLED_APPS = [
     # созданные приложения
     "jobs.apps.JobsConfig",
     "blog.apps.BlogConfig",
+    "author.apps.AuthorConfig",
     # установленные приложения
     "ckeditor",
     "ckeditor_uploader",
+
 ]
 
 MIDDLEWARE = [
@@ -73,6 +75,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "author.author_info.author"
             ],
         },
     },
